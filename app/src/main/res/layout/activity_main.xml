@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:id="@+id/relativel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi there! please fill the form"
+        android:textColor="@color/white"
+        android:layout_marginLeft="100dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativel"></EditText>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your age"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/name"></EditText>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your address"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="200dp"
+        android:layout_below="@+id/age"></EditText>
+    <Button
+        android:id="@+id/previewbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="preview"
+        android:layout_below="@+id/address"
+        ></Button>
+</RelativeLayout>
